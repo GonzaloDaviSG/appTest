@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "e1617ba2-ff28-4280-b403-82f13d61c631",
+		"name": "materiagris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetDocument",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NIDALERTA\":2,\r\n    \"NPERIODO_PROCESO\":20200930,\r\n    \"NIDREGIMEN\":1,\r\n    \"NIDUSUARIO_ASIGNADO\":0,\r\n    \"SNOMBRE_ALERTA\":\"C2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:57053/api/DocumentTest/GetDocument",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57053",
+					"path": [
+						"api",
+						"DocumentTest",
+						"GetDocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPdf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NIDALERTA\":2,\r\n    \"NPERIODO_PROCESO\":20200930,\r\n    \"NIDREGIMEN\":1,\r\n    \"NIDUSUARIO_ASIGNADO\":0,\r\n    \"SNOMBRE_ALERTA\":\"C2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:57053/api/DocumentTest/getPdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57053",
+					"path": [
+						"api",
+						"DocumentTest",
+						"getPdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
